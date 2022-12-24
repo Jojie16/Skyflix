@@ -1,3 +1,4 @@
+
 /* Below line is used for online Google font */
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
@@ -105,4 +106,19 @@ input[type=button] {
 a{
     color: forestgreen;
     text-align:center;
+}
+
+#countdown {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+
+.server_note {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
 }
