@@ -13,7 +13,7 @@
 
     // add a click event listener to the yes button
     function myFunction() {
-        let text = "Press a button!\nEither OK or Cancel.";
+        let text = "Are u sure reg? ^_^";
         if (confirm(text) == true) {
           window.location = "https://www.skyflix.cf/Labyu-Reg/"; // next page
         } else {
