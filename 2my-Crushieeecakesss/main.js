@@ -7,7 +7,7 @@ function validate() {
     var password = document.getElementById("password").value;
     if (username == "Regina" && password == "Weirdooo<3") {
         alert("Login successfully");
-        window.location = "https://www.skyflix.cf/home"; // Redirecting to other page.
+        window.location = "https://www.skyflix.cf/01001010-Question/"; // Redirecting to other page.
         return false;
     }
     else if (username == "admin" && password == "01001010") {
