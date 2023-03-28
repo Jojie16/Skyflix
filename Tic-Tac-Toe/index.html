@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div id="board">
+    <div class="square" id="0"></div>
+    <div class="square" id="1"></div>
+    <div class="square" id="2"></div>
+    <div class="square" id="3"></div>
+    <div class="square" id="4"></div>
+    <div class="square" id="5"></div>
+    <div class="square" id="6"></div>
+    <div class="square" id="7"></div>
+    <div class="square" id="8"></div>
+  </div>
+  <div id="status"></div>
+  <div id="score">
+    <p>Score Board:</p>
+    <p id="regina-score">Regina: 0</p>
+    <p id="jojie-score">Jojie: 0</p>
+  </div>
+  <div id="restart">
+    <button onclick="restart()">Restart Game</button>
+  </div>
+  <div id="dark-mode">
+    <label class="switch">
+      <input type="checkbox" onclick="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <p>Dark Mode</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.square {
+  width: 96px;
+  height: 96px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 72px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#restart {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+}
+
+.dark-mode {
+background-color: #333;
+color: #fff;
+}
+
+.dark-mode #board, .dark-mode .square, .dark-mode #status, .dark-mode #score, .dark-mode #restart, .dark-mode .switch:before, .dark-mode .switch:after {
+border-color: #fff;
+}
+
+.dark-mode .switch:before {
+background-color: #fff;
+}
+
+.dark-mode .switch:after {
+background-color: #333;
+}
+
+.dark-mode .slider {
+background-color: #333;
+}
+
+.dark-mode .slider:before {
+background-color: #fff;
+}
+
+.dark-mode input:checked + .slider {
+background-color: #2196F3;
+}
+
+.dark-mode input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+background-color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+#board {
+width: 200px;
+}
+
+.square {
+width: 62px;
+height: 62px;
+font-size: 48px;
+}
+
+#status, #score, #restart, #dark-mode {
+font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+#board {
+width: 150px;
+}
+
+.square {
+width: 46px;
+height: 46px;
+font-size: 36px;
+}
+}
+
+@media only screen and (max-width: 300px) {
+#board {
+width: 100px;
+}
+
+.square {
+width: 30px;
+height: 30px;
+font-size: 24px;
+}
+}
